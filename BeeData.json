@@ -1,0 +1,29 @@
+{
+    "apiary": {
+        "apiaryID": 1,
+        "beekeeperID": 1,
+        "latitude": 36.216797,
+        "longitude": -81.674533,
+        "name": "Apiary 1",
+        "address": "148 Faculty Street",
+        "country": "USA",
+        "hiveCount": 2,
+        "active": true,
+        "environment": "urban",
+        "lastVisited": "2019-01-01",
+        "timeZone":"EDT",
+        "startDate": "2019-01-01",
+        "orientation": "east",
+        "type": "fixed",
+        "notes": null
+    },
+
+    "beekeeper": {
+        "beekeeperID": 1,
+        "email": "brownle2@appstate.edu",
+        "firstname": "Lucy",
+        "lastname": "Brown",
+        "phone": 9048143317
+    }
+    
+}

@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "BeeDataSchema",
+
+    "type": "object",
+
+    "properties": {
+        
+        "apiary": {
+            
+            "type":"object",
+            "properties": {
+                "apiaryID": { "type" : "number" },
+                "beekeeperID": { "type": "number" },
+                "latitude": { "type":"number"},
+                "longitude": { "type":"number"},
+                "name": { "type":"string"},
+                "address": { "type":"string"},
+                "country": { "type":"string"},
+                "hiveCount": { "type":"number"},
+                "active": {"type":"boolean"},
+                "environment": {"type": "string",
+                                "enum": ["other","natural","agricultural","urban"]},
+                "lastVisited": {"type":"string"},
+                "timeZone": {"type":"string"},
+                "startDate": {"type":"string"},
+                "orientation": {"type": "string",
+                                "enum": ["east","north","northwest","northeast",
+                                        "south","southwest","southeast","west","various"]},
+                "hiveType": {"type":"string",
+                            "enum": ["client","fixed","moveable","other","temporary"]},
+                "notes": {"type":"string"}
+            }
+        },
+
+        "beekeeper": {
+
+            "type":"object",
+            "properties": {
+                "beekeeperID": {"type":"number"},
+                "email": {"type":"string"},
+                "firstname": {"type":"string"},
+                "lastname": {"type":"string"},
+                "phone": {"type":"number"},
+                "beekeeperSince": {"type":"string"},
+                "companyLocation": {"type":"string"},
+                "role": {"type":"string",
+                        "enum": ["student","teacher","other"]},
+                "birthdate": {"type":"string"},
+                "gender": {"type":"string",
+                            "enum":["prefer not to say","female","male"]},
+                "method": {"type":"string",
+                            "enum": ["biodynamic","commercial","conventional",
+                                    "natural","organic","other"]},
+                "notes": {"type":"string"}
+            }
+        }
+    }
+}
